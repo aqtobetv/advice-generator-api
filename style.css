@@ -1,0 +1,77 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+.visually-hidden{
+    display: none;
+}
+main {
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: center;    
+    height: 100vh;
+    padding-top: 120px;
+
+}
+article{
+    width: 91%;
+    max-width: 545px;
+    border-radius: 15px;
+    background-color: var(--DarkGrayishBlue);
+    color: var(--LightCyan);
+    padding: 25px 20px;
+    text-align: center;
+    height: 312px;
+}
+.advice-number{
+    color: var(--NeonGreen);
+    letter-spacing: 2.3px;
+    font-size: 13px;
+}
+.dice-icon{
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    top: 50%;
+    margin-top: -12px;
+}
+.neonCircle{
+    display: block;
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    background-color: var(--NeonGreen);
+    margin: 30px auto;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width:1440px){
+    main{
+        padding-top: 225px;
+    }
+    article{       
+        padding-top: 30px;
+        height: 330px;
+    }
+    .advice-number {       
+        letter-spacing: 4.6px;
+    }
+    .advice{
+        font-size: 27px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    
+}
