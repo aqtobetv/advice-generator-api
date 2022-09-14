@@ -32,6 +32,7 @@ article{
     color: var(--LightCyan);
     padding: 25px 20px;
     text-align: center;
+    position: relative;
     height: 312px;
 }
 .advice-number{
@@ -48,12 +49,14 @@ article{
 }
 .neonCircle{
     display: block;
-    position: relative;
+    position: absolute;
+    bottom: -31px;
+    margin-left: -31px;
+    left: 50%;
     width: 62px;
     height: 62px;
     border-radius: 50px;
-    background-color: var(--NeonGreen);
-    margin: 30px auto;
+    background-color: var(--NeonGreen);   
     border: none;
     cursor: pointer;
 }
